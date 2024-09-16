@@ -208,9 +208,16 @@
 //
 
 
-
-
-
+// for (let lists = 0; lists < 5; lists++) {
+//     document.write(`<ul>`)
+//
+//     for (let item = 1; item <=3 ; item++) {
+//         const randomNum =  1+ Math.floor(Math.random() * (1000 + 1));
+//         document.write(`<li>${randomNum}</li>`)
+//     }
+// document.write(`</ul>`)
+//
+// }
 
 
 
@@ -230,28 +237,38 @@
 //=====================================================
 // Вивести 4 двовимірні таблиці 5*6
 
-// for (let tableNumber = 0; tableNumber < 4; tableNumber++) {
-//     document.write("<table>")
-//
-//
-//     for (let rowNumber = 0; rowNumber < 5; rowNumber++) {
-//         document.write("<tr>")
-//
-//         for (let cellNumber = 0; cellNumber < 5; cellNumber++) {
-//         const randomNumber = 1+ Math.floor(Math.random() * (100 + 1  +1));
-//
-//             document.write(`<td> ${randomNumber}</td>`)
-//
-//         }
-//         document.write("</tr>")
-//
-//     }
-//     document.write("</table>")
-// }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 //=====================================================
 // Горизонтальну діаграму з 8 рандомними значеннями (0-100)
+
+
+// for (let i = 0; i < 8; i++) {
+//     const randomNumber = 1+ Math.floor(Math.random() * (1 + 100));
+//     console.log(randomNumber)
+// document.write(`<div style="background: red;  margin-top: 10px; width: ${randomNumber}px ;height: 20px" ></div>`)
+// }
+//
+
+
+
+
+
+
+
 
 
 // for (let i = 0; i < 8; i++)  {
@@ -265,6 +282,29 @@
 
 //=====================================================
 // Випадковим  чином вивести у рандомних позиціях 10 зображень-смайликів
+
+
+for (let i = 0; i < 10; i++) {
+    const leftPos = 1 + Math.floor(Math.random() * (100 + 1  +1));
+    const rightPos = 1 + Math.floor(Math.random() * (100 + 1  +1));
+    const topPos = 1 + Math.floor(Math.random() * (100 + 1  +1));
+    const bottomPos = 1 + Math.floor(Math.random() * (100 + 1  +1));
+
+    document.write(`<img src="./img/01.png" style="position: absolute; width: 20px; top: ${topPos}px; left: ${leftPos}; bottom: ${bottomPos}px ; right: ${rightPos}; "></img>`)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 // for (let i = 0; i < 10; i++)  {
@@ -395,6 +435,43 @@
 
 //=====================================================
 // Морський бій. Комп’ютер випадково розташовує одиночний корабель на полі розміром N*M. Маючи К снарядів користувач намагається потопити корабель.
+
+
+
+//
+// const rowsNumber = 1 + Math.floor(Math.random() * (100 +1));
+// const columnsNumber = 1 + Math.floor(Math.random() * (100 +1));
+// console.log(columnsNumber);
+// console.log(rowsNumber);
+//
+// let  missle = parseInt(prompt("missle"));
+// let  userRows;
+// let userColumns;
+// do {
+//     userRows=  parseInt(prompt("userRows"));
+//     userColumns = parseInt(prompt("UserColumns"));
+//     missle --
+//
+// }
+//
+//
+//
+// while ( !(userRows === rowsNumber && columnsNumber === userColumns) && missle > 0){
+//     if ((userRows === rowsNumber && columnsNumber === userColumns) ){
+//         alert("win")
+//
+//
+//     }else {
+//         alert("lose")
+//     }
+// }
+
+
+
+
+
+
+
 
     // const rowsNumber = parseInt(prompt("rows number")); // n
     // const columnsNumber = parseInt(prompt("columns number")); // m
